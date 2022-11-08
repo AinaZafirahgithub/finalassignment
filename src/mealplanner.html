@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SimplyCooking | Home</title>
+
+  <!-- STYLING AND CSS FILE-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel = "stylesheet" href = "mealplanner.css">
+
+</head>
+
+<body>
+
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">SimplyCooking</label>
+
+    <!-- NAVIGATION BAR -->
+    <ul>
+      <li><a class="active" href="mealplanner.html">HOME</a></li>
+      <li><a href="index.html">NOTES</a></li>
+      <li><a href="#" onclick="self.close();">EXIT</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- SEARCH FORM -->
+  <div class = "container">
+    <div class = "meal-wrapper">
+      <div class = "meal-search">
+        <h1 class="main_title">Search. Learn. Save.<br>Cooking Made Easy.</h1>
+        <p>Say goodbye to long and frustrating food blogs. Find recipes for your ingredients<br>and access YouTube videos to prepare any meal in minutes.</p>
+        <div class = "meal-search-box">
+          <input type = "text" class = "search-control" placeholder="Enter Ingredient (eg: chicken)" id = "search-input" required>
+          <button type = "submit" class = "search-btn btn" id = "search-btn">
+            <i class = "fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- MEAL RESULTS -->
+      <div class = "meal-result">
+        <div id= "meal">
+        </div>
+      </div>
+
+
+      <div class = "meal-details">
+        <!-- CLOSE BUTTON FOR RECIPES -->
+        <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn">
+          <i class = "fas fa-times"></i>
+        </button>
+
+        <!-- MEAL CONTENT (INGREDIENTS, MEASUREMENTS, INSTRUCTIONS, YOUTUBE VIDEO) -->
+        <div class = "meal-details-content">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS FILE -->
+  <script src = "mealplanner.js"></script>
+
+</body>
+</html>

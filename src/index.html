@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SimplyCooking | Notes</title>
+
+  <!-- STYLING AND CSS FILE-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel = "stylesheet" href = "index.css">
+
+</head>
+
+<body>
+
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">SimplyCooking</label>
+
+    <!-- NAVIGATION BAR -->
+    <ul>
+      <li><a href="mealplanner.html">HOME</a></li>
+      <li><a class="active" href="index.html">NOTES</a></li>
+      <li><a href="#" onclick="self.close();">EXIT</a></li>
+    </ul>
+  </nav>
+
+  <!-- CRUD FORM -->
+  <div class = "container">
+    <div class = "meal-wrapper">
+      <div class = "meal-search">
+        <h1 class="main_title">My. Notes.</h1>
+        <p>Found your favourite recipes and want to make notes?<br>Copy and save them here!</p>
+        <div class = "meal-search-box">
+
+          <!-- FILE TITLE FORM -->
+          <div class="notes_title">
+            <label>Title:</label>
+            <input type = "text" class = "search-control" id="fileName" placeholder="eg: favourite.txt">
+          </div>
+        </div>
+        <div class = "meal-search-box">
+
+          <!-- CONTENT FORM -->
+          <div>
+            <label>Notes:</label>
+            <textarea id="fileContents" class="search-control" rows="10" cols="60"></textarea>
+          </div>
+        </div>
+
+          <!-- BUTTONS (CREATE, READ, DELETE, UPDATE) -->
+          <button id="btnCreate" class="btn btn-default">Save</button>
+          <button id="btnRead" class="btn btn-default">Open</button>
+          <button id="btnDelete" class="btn btn-default">Delete</button>
+          <button id="btnUpdate" class="btn btn-default">Update</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS FILE -->
+  <script src="main.js"></script>
+</body>
+</html>
+
